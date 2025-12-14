@@ -1,0 +1,66 @@
+# MSMC - Prevent accidental credential exposure
+
+# Results directory - CONTAINS PLAINTEXT CREDENTIALS
+results/
+Results/
+RESULTS/
+
+# Configuration files - MAY CONTAIN WEBHOOK URLs
+config.ini
+Config.ini
+CONFIG.INI
+
+# Combo files - CONTAINS CREDENTIALS TO CHECK
+*.txt
+!requirements.txt
+!SECURITY_WARNING.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tor data
+tor/
+Tor/
+
+# Logs
+*.log
+
+# Temporary files
+/tmp/
+temp/

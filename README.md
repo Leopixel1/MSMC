@@ -1,4 +1,12 @@
 # MSMC
+
+⚠️ **SECURITY WARNING** ⚠️
+**READ [SECURITY_WARNING.txt](SECURITY_WARNING.txt) AND [SECURITY_ANALYSIS.md](SECURITY_ANALYSIS.md) BEFORE USING**
+
+**CRITICAL:** This tool stores credentials in plaintext, sends data to external services, and may violate Terms of Service. Only use on accounts you own. See security documentation for full details.
+
+---
+
 ## About:
 msmc is a minecraft account checker that checks through microsoft xbox login instead of the older mojang login.
 it supports http(s), socks4, socks5 proxies but they must be pretty decent because microsofts authentication is very protective. it also uses tor proxies. it auto installs tor for you if selected.
@@ -40,3 +48,42 @@ python MSMC.py
 
 ## Usage:
 You are not allowed to sell msmc or any modified versions. If you use any of my code please give me credit.
+
+---
+
+## ⚠️ Security & Legal Notice
+
+### Security Risks
+This tool has been analyzed and contains several security concerns:
+- **Credentials stored in plaintext** - All results are saved without encryption
+- **External data transmission** - Credentials sent to Discord webhooks and third-party APIs
+- **Vulnerable dependencies** - urllib3 2.2.2 has known CVEs (update to >=2.6.0 required)
+- **Disabled SSL verification** - Vulnerable to man-in-the-middle attacks
+- **Untrusted proxy usage** - Auto-scraped proxies may log your traffic
+
+### Legal Warnings
+⚖️ Using this tool may violate:
+- Microsoft Terms of Service
+- Mojang/Microsoft EULA
+- Computer Fraud and Abuse Act (CFAA)
+- Local anti-hacking laws
+
+**ONLY use this tool on accounts you personally own.**
+
+### Required Reading
+Before using this software, you MUST read:
+1. [SECURITY_WARNING.txt](SECURITY_WARNING.txt) - Critical security and legal warnings
+2. [SECURITY_ANALYSIS.md](SECURITY_ANALYSIS.md) - Comprehensive security analysis
+
+### Recommendations
+- ✅ Only check your own accounts
+- ✅ Run on isolated/virtual machine
+- ✅ Update urllib3: `pip install --upgrade urllib3>=2.6.0`
+- ✅ Review webhook URL in config.ini before running
+- ✅ Delete result files immediately after use
+- ✅ Never commit results to git
+- ❌ Never test credentials you don't own
+- ❌ Never share your config.ini file
+
+**By using this software, you accept full legal responsibility and acknowledge all security risks.**
+
