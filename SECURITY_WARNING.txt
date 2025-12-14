@@ -1,0 +1,95 @@
+⚠️ SECURITY WARNING ⚠️
+=======================
+
+IMPORTANT: READ BEFORE USING THIS SOFTWARE
+
+This repository contains a Minecraft account checking tool that handles sensitive 
+user credentials. Before using this software, you MUST understand the following:
+
+🔴 CRITICAL SECURITY RISKS:
+---------------------------
+1. CREDENTIALS STORED IN PLAINTEXT
+   - All checked accounts are saved without encryption
+   - Anyone with access to your computer can read these files
+   - Files location: results/[filename]/*.txt
+
+2. EXTERNAL DATA TRANSMISSION
+   - Account credentials are sent to external services
+   - Discord webhooks receive your account information
+   - Third-party APIs receive your email and password
+   - Proxies can intercept all traffic
+
+3. VULNERABLE DEPENDENCIES
+   - urllib3 v2.2.2 has known security vulnerabilities
+   - Requires update to urllib3 >= 2.6.0
+
+⚖️ LEGAL WARNINGS:
+------------------
+Using this tool may VIOLATE:
+- Microsoft Terms of Service
+- Mojang/Microsoft EULA
+- Computer Fraud and Abuse Act (CFAA)
+- Anti-hacking laws in your jurisdiction
+
+❌ ILLEGAL USES:
+- Testing credentials you don't own (ILLEGAL)
+- Credential stuffing attacks (ILLEGAL)
+- Unauthorized account access (ILLEGAL)
+- Violating Terms of Service (CONTRACT VIOLATION)
+
+✅ LEGAL USE:
+- Testing your own accounts only
+- Understanding you accept all risks
+- Compliance with local laws
+
+🛡️ SECURITY BEST PRACTICES:
+---------------------------
+1. ONLY check accounts you personally own
+2. NEVER share your config.ini file
+3. Review webhook URLs before running
+4. Don't trust unknown proxies
+5. Keep your system secure
+6. Update dependencies: pip install --upgrade urllib3>=2.6.0
+7. Delete result files after use
+8. Use on isolated/virtual machine
+
+⚠️ RISK ACKNOWLEDGMENT:
+-----------------------
+By using this software, you acknowledge that:
+- You understand the security risks
+- You accept full legal responsibility
+- You will only use it on accounts you own
+- You understand credentials are stored insecurely
+- You accept the tool may violate Terms of Service
+- The developers are not liable for misuse
+
+🔒 RECOMMENDATIONS:
+------------------
+FOR USERS:
+- Run on isolated system
+- Use VPN/secure network
+- Delete results immediately after viewing
+- Never commit results to git
+
+FOR DEVELOPERS:
+- Implement credential encryption
+- Enable SSL verification
+- Remove third-party credential APIs
+- Add rate limiting
+- Implement secure storage
+
+📋 BEFORE RUNNING:
+-----------------
+[ ] I own all accounts I will check
+[ ] I understand credentials are stored in plaintext
+[ ] I have reviewed the webhook URL in config.ini
+[ ] I understand this may violate Terms of Service
+[ ] I accept full legal responsibility
+[ ] I have updated urllib3 to >= 2.6.0
+[ ] I am aware of the security risks
+
+IF YOU CANNOT CHECK ALL BOXES ABOVE, DO NOT USE THIS SOFTWARE.
+
+For detailed security analysis, see: SECURITY_ANALYSIS.md
+
+Last Updated: 2025-12-14
