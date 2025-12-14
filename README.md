@@ -5,6 +5,8 @@
 
 **CRITICAL:** This tool stores credentials in plaintext, sends data to external services, and may violate Terms of Service. Only use on accounts you own. See security documentation for full details.
 
+📖 **[HOW TO ONLY CHECK YOUR OWN ACCOUNTS →](HOW_TO_USE_SAFELY.md)** - Step-by-step guide for safe usage
+
 ---
 
 ## About:
@@ -72,8 +74,9 @@ This tool has been analyzed and contains several security concerns:
 
 ### Required Reading
 Before using this software, you MUST read:
-1. [SECURITY_WARNING.txt](SECURITY_WARNING.txt) - Critical security and legal warnings
-2. [SECURITY_ANALYSIS.md](SECURITY_ANALYSIS.md) - Comprehensive security analysis
+1. **[HOW_TO_USE_SAFELY.md](HOW_TO_USE_SAFELY.md)** - Step-by-step guide to check only your own accounts
+2. [SECURITY_WARNING.txt](SECURITY_WARNING.txt) - Critical security and legal warnings
+3. [SECURITY_ANALYSIS.md](SECURITY_ANALYSIS.md) - Comprehensive security analysis
 
 ### Recommendations
 - ✅ Only check your own accounts
